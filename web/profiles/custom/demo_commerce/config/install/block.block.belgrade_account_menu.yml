@@ -1,0 +1,26 @@
+uuid: c34c764e-e72f-4d2e-9c2e-8f98b84c96ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - belgrade
+_core:
+  default_config_hash: l7DU4IlrCj2DTMidvM-KK-P8heuOP8XCsxry_UoLm5E
+id: belgrade_account_menu
+theme: belgrade
+region: top_navigation
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

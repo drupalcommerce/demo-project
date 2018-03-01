@@ -30,7 +30,6 @@ dependencies:
   - dynamic_page_cache
   - taxonomy
   - dblog
-  - search
   - shortcut
   - toolbar
   - field_ui
@@ -65,6 +64,8 @@ dependencies:
   - taxonomy_menu
   - facets
   - facets_pretty_paths
+  - search_api
+  - search_api_db
   - commerce_demo
 
 themes:
