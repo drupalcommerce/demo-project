@@ -1533,12 +1533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojanz/commerce_demo.git",
-                "reference": "bfc00b546047b9a62bee32ab751d1f61d6ff9019"
+                "reference": "6dc8d69821c34f707c0f25abd7d5dc922278a528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/bfc00b546047b9a62bee32ab751d1f61d6ff9019",
-                "reference": "bfc00b546047b9a62bee32ab751d1f61d6ff9019",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/6dc8d69821c34f707c0f25abd7d5dc922278a528",
+                "reference": "6dc8d69821c34f707c0f25abd7d5dc922278a528",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,7 @@
                 "source": "https://github.com/bojanz/commerce_demo/tree/master",
                 "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-03-01T13:00:40+00:00"
+            "time": "2018-03-01T17:48:47+00:00"
         },
         {
             "name": "drupal/commerce_order",
