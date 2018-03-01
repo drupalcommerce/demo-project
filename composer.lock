@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e4d72447a3c98968e0f93439f154077",
+    "content-hash": "101975ef537d1aea0fb37d1702d960f3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1528,165 +1528,40 @@
             "time": "2017-11-27T15:33:09+00:00"
         },
         {
-            "name": "drupal/commerce_cart",
-            "version": "2.4.0",
-            "require": {
-                "drupal/commerce": "self.version",
-                "drupal/commerce_order": "*",
-                "drupal/commerce_product": "*",
-                "drupal/core": "~8.0"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1518472954",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Damien Tournoud",
-                    "homepage": "https://www.drupal.org/user/22211"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Implements the shopping cart system and add to cart features.",
-            "homepage": "https://www.drupal.org/project/commerce",
-            "support": {
-                "source": "http://cgit.drupalcode.org/commerce"
-            }
-        },
-        {
-            "name": "drupal/commerce_checkout",
-            "version": "2.4.0",
-            "require": {
-                "drupal/commerce": "self.version",
-                "drupal/commerce_cart": "*",
-                "drupal/commerce_order": "*",
-                "drupal/core": "~8.0"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1518472954",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Damien Tournoud",
-                    "homepage": "https://www.drupal.org/user/22211"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides configurable checkout flows.",
-            "homepage": "https://www.drupal.org/project/commerce",
-            "support": {
-                "source": "http://cgit.drupalcode.org/commerce"
-            }
-        },
-        {
             "name": "drupal/commerce_demo",
-            "version": "dev-1.x",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/commerce_demo",
-                "reference": "0c15a3b1af096e27b56affafab8631e1da60395e"
+                "url": "https://github.com/bojanz/commerce_demo.git",
+                "reference": "bfc00b546047b9a62bee32ab751d1f61d6ff9019"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/bfc00b546047b9a62bee32ab751d1f61d6ff9019",
+                "reference": "bfc00b546047b9a62bee32ab751d1f61d6ff9019",
+                "shasum": ""
             },
             "require": {
-                "drupal/color_field": "*",
-                "drupal/commerce": "*",
-                "drupal/commerce_cart": "*",
-                "drupal/commerce_checkout": "*",
-                "drupal/commerce_product": "*",
-                "drupal/commerce_shipping": "*",
-                "drupal/commerce_tax": "*",
-                "drupal/core": "*",
-                "drupal/pathauto": "*",
-                "drupal/taxonomy_term_depth": "*"
+                "drupal/color_field": "^2.0",
+                "drupal/commerce": "^2.0",
+                "drupal/commerce_shipping": "^2.0",
+                "drupal/facets": "^1.0",
+                "drupal/facets_pretty_paths": "^1.0",
+                "drupal/pathauto": "^1.0",
+                "drupal/search_api": "^1.0",
+                "drupal/taxonomy_term_depth": "2.x-dev"
             },
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1518357780",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
-            "authors": [
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                }
-            ],
-            "description": "Provides a demo store for Commerce.",
-            "homepage": "https://www.drupal.org/project/commerce_demo",
+            "description": "Demo module for Drupal Commerce.",
+            "homepage": "http://drupal.org/project/commerce_demo",
             "support": {
-                "source": "http://cgit.drupalcode.org/commerce_demo"
+                "source": "https://github.com/bojanz/commerce_demo/tree/master",
+                "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-02-11T13:59:18+00:00"
+            "time": "2018-03-01T13:00:40+00:00"
         },
         {
             "name": "drupal/commerce_order",
@@ -1800,61 +1675,6 @@
             }
         },
         {
-            "name": "drupal/commerce_product",
-            "version": "2.4.0",
-            "require": {
-                "drupal/commerce": "self.version",
-                "drupal/commerce_price": "*",
-                "drupal/commerce_store": "*",
-                "drupal/core": "*"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1518472954",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Damien Tournoud",
-                    "homepage": "https://www.drupal.org/user/22211"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Defines the Product entity and associated features.",
-            "homepage": "https://www.drupal.org/project/commerce",
-            "support": {
-                "source": "http://cgit.drupalcode.org/commerce"
-            }
-        },
-        {
             "name": "drupal/commerce_shipping",
             "version": "2.0.0-beta4",
             "source": {
@@ -1962,60 +1782,6 @@
                 }
             ],
             "description": "Defines the Store entity and associated features.",
-            "homepage": "https://www.drupal.org/project/commerce",
-            "support": {
-                "source": "http://cgit.drupalcode.org/commerce"
-            }
-        },
-        {
-            "name": "drupal/commerce_tax",
-            "version": "2.4.0",
-            "require": {
-                "drupal/commerce": "self.version",
-                "drupal/commerce_order": "*",
-                "drupal/core": "~8.0"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1518472954",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Damien Tournoud",
-                    "homepage": "https://www.drupal.org/user/22211"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides tax functionality.",
             "homepage": "https://www.drupal.org/project/commerce",
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce"
