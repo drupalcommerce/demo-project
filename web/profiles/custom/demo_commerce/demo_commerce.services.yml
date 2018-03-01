@@ -1,0 +1,4 @@
+services:
+  demo_commerce.content_importer:
+    class: Drupal\demo_commerce\ContentImporter
+    arguments: ['@entity_type.manager']
