@@ -1,4 +1,3 @@
-uuid: 48320adb-7e0f-43c8-96ec-2bf7410fc2a0
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - belgrade
-_core:
-  default_config_hash: 63FLrk7BpcLU-5YLZwWVCOtOMozD8mSzBytCiu0Oznc
 id: belgrade_main_menu
 theme: belgrade
 region: navigation
