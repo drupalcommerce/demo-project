@@ -1,9 +1,9 @@
-name: Commerce Base
+name: Demo Commerce
 type: profile
 core: 8.x
 description: 'Install with Drupal Commerce pre-configured.'
 distribution:
-  name: 'Drupal'
+  name: 'Demo Commerce'
 dependencies:
   # Standard
   - node
@@ -58,10 +58,12 @@ dependencies:
   - commerce_payment
   - commerce_promotion
   - commerce_tax
-  
+
   # Contrib
   - admin_toolbar
   - swiftmailer
+  - commerce_demo
+
 themes:
-  - bartik
+  - belgrade
   - seven

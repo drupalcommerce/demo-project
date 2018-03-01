@@ -22,6 +22,12 @@ The `composer create-project` command passes ownership of all files to the
 project that is created. You should create a new git repository, and commit
 all files not excluded by the .gitignore file.
 
+Then run
+
+```
+composer run preview
+```
+
 ## What does the demo do?
 
 * Drupal is installed in the `web` directory.

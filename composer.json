@@ -35,6 +35,7 @@
         "drupal/admin_toolbar": "~1.0",
         "drupal/belgrade": "1.x-dev",
         "drupal/bootstrap": "^3.10",
+        "drupal/color_field": "^2.0",
         "drupal/commerce": "~2.0",
         "drupal/commerce_bootstrap": "1.x-dev",
         "drupal/commerce_demo": "1.x-dev",
@@ -63,10 +64,13 @@
     "prefer-stable": true,
     "autoload": {
         "classmap": [
-            "scripts/composer/ScriptHandler.php"
+            "scripts/composer/ScriptHandler.php",
+            "scripts/demo/DemoInstallCommand.php",
+            "scripts/demo/DemoStartCommand.php"
         ]
     },
     "scripts": {
+        "preview": "composer install && scripts/demo-install.php install && scripts/demo-install.php start",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"

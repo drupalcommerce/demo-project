@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ba47ceca91353fdbcc45ccefedf4953",
+    "content-hash": "16e10b714e12bcc55a8ab8189d7f9173",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1354,32 +1354,32 @@
         },
         {
             "name": "drupal/color_field",
-            "version": "1.0.0",
+            "version": "2.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/color_field",
-                "reference": "8.x-1.0"
+                "reference": "8.x-2.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/color_field-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "220c620acf39237fada74892433e25c323d7ad3b"
+                "url": "https://ftp.drupal.org/files/projects/color_field-8.x-2.0-rc2.zip",
+                "reference": "8.x-2.0-rc2",
+                "shasum": "30ea862367457fb80cbf663bae531bf0d0a51055"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1375168268",
+                    "version": "8.x-2.0-rc2",
+                    "datestamp": "1493227442",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1393,6 +1393,7 @@
                     "homepage": "https://www.drupal.org/user/431910"
                 }
             ],
+            "description": "Provides a color field type to store the color value and opacity",
             "homepage": "https://www.drupal.org/project/color_field",
             "support": {
                 "source": "http://cgit.drupalcode.org/color_field"
@@ -3328,32 +3329,6 @@
             }
         },
         {
-            "name": "drupalcommerce/commerce_base",
-            "version": "dev-8.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupalcommerce/commerce_base.git",
-                "reference": "241bcf336c92abaac8275807ce552bea846bbee0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupalcommerce/commerce_base/zipball/241bcf336c92abaac8275807ce552bea846bbee0",
-                "reference": "241bcf336c92abaac8275807ce552bea846bbee0",
-                "shasum": ""
-            },
-            "type": "drupal-profile",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Commerce 2.x installation profile",
-            "homepage": "https://github.com/drupalcommerce/commerce_base",
-            "support": {
-                "source": "https://github.com/drupalcommerce/commerce_base/tree/8.x-1.x",
-                "issues": "https://github.com/drupalcommerce/commerce_base/issues"
-            },
-            "time": "2017-07-23T22:08:09+00:00"
-        },
-        {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
@@ -3839,16 +3814,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.4",
+            "version": "v3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078"
+                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e57b3a09784f846411aa7ed664eedb73e3399078",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
+                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
                 "shasum": ""
             },
             "require": {
@@ -3886,7 +3861,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-01-25T21:31:33+00:00"
+            "time": "2018-02-28T20:30:58+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -7615,7 +7590,6 @@
         "drupal/belgrade": 20,
         "drupal/commerce_bootstrap": 20,
         "drupal/commerce_demo": 20,
-        "drupalcommerce/commerce_base": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
