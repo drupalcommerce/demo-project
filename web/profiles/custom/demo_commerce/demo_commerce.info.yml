@@ -62,6 +62,9 @@ dependencies:
   # Contrib
   - admin_toolbar
   - swiftmailer
+  - taxonomy_menu
+  - facets
+  - facets_pretty_paths
   - commerce_demo
 
 themes:
