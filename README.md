@@ -1,6 +1,14 @@
-# Drupal Commerce Demo
+# Drupal Commerce Demo [![Build Status](https://travis-ci.org/drupalcommerce/demo-project.svg?branch=master)](https://travis-ci.org/drupalcommerce/demo-project)
 
 Use [Composer](https://getcomposer.org/) to get a Drupal Commerce demo.
+
+Quick start:
+
+```
+composer create-project drupalcommerce/demo-project demo-commerce --stability dev --no-interaction
+cd demo-project
+composer run preview
+```
 
 ![Belgrade product example](assets/belgrade-product.jpg)
 
@@ -25,6 +33,13 @@ all files not excluded by the .gitignore file.
 Then run
 
 ```
+composer run preview
+```
+
+To reinstall
+
+```
+composer run cleanup
 composer run preview
 ```
 

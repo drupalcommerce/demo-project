@@ -74,6 +74,7 @@
     },
     "scripts": {
         "preview": "composer install && scripts/demo-install.php install && scripts/demo-install.php start",
+        "clean": "chmod 775 web/sites/default; chmod 664 web/sites/default/settings.php; rm web/sites/default/settings.php; rm web/sites/default/files/.sqlite; rm -rf web/sites/default/files/*",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
