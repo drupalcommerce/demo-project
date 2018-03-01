@@ -1,0 +1,10 @@
+language: php
+php:
+  - 7.1
+before_script:
+  - phpenv config-rm xdebug.ini
+  - composer --version
+install:
+  - composer install
+script:
+  - scripts/demo-install.php install
