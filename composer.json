@@ -1,0 +1,112 @@
+{
+    "name": "drupalcommerce/demo-project",
+    "description": "Commerce 2.x out of the box demonstration",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "commerce_base": {
+            "type": "vcs",
+            "url": "https://github.com/drupalcommerce/commerce_base"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "config": {
+      "bin-dir": "bin",
+      "sort-packages": true
+    },
+    "require": {
+        "ext-curl": "*",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/admin_toolbar": "~1.0",
+        "drupal/belgrade": "1.x-dev",
+        "drupal/bootstrap": "^3.10",
+        "drupal/commerce": "~2.0",
+        "drupal/commerce_bootstrap": "1.x-dev",
+        "drupal/commerce_demo": "1.x-dev",
+        "drupal/console": "~1.0",
+        "drupal/core": "~8.4",
+        "drupal/search_api": "~1.0",
+        "drupal/swiftmailer": "~1.0",
+        "drupal/token": "~1.0",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "webflo/drupal-finder": "^1.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "behat/mink": "1.7.x-dev",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
+        "phpunit/phpunit": ">=4.8.35 <5",
+        "symfony/css-selector": "~3.2.8"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    }
+}
