@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "101975ef537d1aea0fb37d1702d960f3",
+    "content-hash": "1eca40ede1832b477e1295397671e8b5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1238,7 +1238,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/belgrade",
-                "reference": "790d46a5b3fe1f6fd2d4adcdf6d7d0641495d735"
+                "reference": "5d1cefb438f37af99abae39058c9687d2237a6e9"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1285,7 +1285,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
             },
-            "time": "2018-01-17T12:27:12+00:00"
+            "time": "2018-03-01T19:29:49+00:00"
         },
         {
             "name": "drupal/bootstrap",
@@ -1533,12 +1533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojanz/commerce_demo.git",
-                "reference": "6dc8d69821c34f707c0f25abd7d5dc922278a528"
+                "reference": "89923150dd1bf8a7f8371bb108e062285418680d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/6dc8d69821c34f707c0f25abd7d5dc922278a528",
-                "reference": "6dc8d69821c34f707c0f25abd7d5dc922278a528",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/89923150dd1bf8a7f8371bb108e062285418680d",
+                "reference": "89923150dd1bf8a7f8371bb108e062285418680d",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,7 @@
                 "source": "https://github.com/bojanz/commerce_demo/tree/master",
                 "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-03-01T17:48:47+00:00"
+            "time": "2018-03-01T18:03:52+00:00"
         },
         {
             "name": "drupal/commerce_order",

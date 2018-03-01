@@ -90,6 +90,7 @@
         ]
     },
     "extra": {
+        "patches": {},
         "installer-types": [
             "bower-asset",
             "npm-asset"
