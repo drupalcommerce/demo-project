@@ -1,11 +1,10 @@
-uuid: 20f277cd-9efd-4cd1-9dab-73bd71737523
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - belgrade
-_core:
-  default_config_hash: sA-saYeyaBepRLoAsbYod3Znbc03x5YxvUn7wV_xWMc
 id: belgrade_page_title
 theme: belgrade
 region: content
@@ -17,4 +16,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: true
+    context_mapping: {  }
