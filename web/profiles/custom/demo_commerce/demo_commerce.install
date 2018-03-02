@@ -65,11 +65,4 @@ function demo_commerce_install() {
 
   // Import our demo content (links, nodes.)
   \Drupal::getContainer()->get('demo_commerce.content_importer')->onInstall();
-
-  // Revert the demo's Search API because it is missing fields.
-  /** @var \Drupal\commerce\Config\ConfigUpdaterInterface $config_updater */
-  $config_updater = \Drupal::service('commerce.config_updater');
-  $result = $config_updater->revert([
-    'search_api.index.products',
-  ], FALSE);
 }
