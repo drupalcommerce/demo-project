@@ -8,6 +8,7 @@ dependencies:
   # Standard
   - node
   - history
+  - big_pipe
   - block
   - breakpoint
   - ckeditor
