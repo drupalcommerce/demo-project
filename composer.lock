@@ -1238,7 +1238,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/belgrade",
-                "reference": "6566c9a93d568bce033d79fddc03a565329b57ef"
+                "reference": "c8111b5d2d6511d50a9019b8967540d011bec059"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1251,7 +1251,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1519932780",
+                    "datestamp": "1519954384",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1285,7 +1285,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
             },
-            "time": "2018-03-01T20:56:34+00:00"
+            "time": "2018-03-02T02:00:45+00:00"
         },
         {
             "name": "drupal/bootstrap",
@@ -1533,12 +1533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojanz/commerce_demo.git",
-                "reference": "81e1c3d4da89b77e50f6a36fd065efc2b8ec4dbd"
+                "reference": "d8abaa91c3773fce71c720304ba063ba40d79bd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/81e1c3d4da89b77e50f6a36fd065efc2b8ec4dbd",
-                "reference": "81e1c3d4da89b77e50f6a36fd065efc2b8ec4dbd",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/d8abaa91c3773fce71c720304ba063ba40d79bd9",
+                "reference": "d8abaa91c3773fce71c720304ba063ba40d79bd9",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,7 @@
                 "source": "https://github.com/bojanz/commerce_demo/tree/master",
                 "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-03-01T21:19:57+00:00"
+            "time": "2018-03-01T22:00:56+00:00"
         },
         {
             "name": "drupal/commerce_order",
