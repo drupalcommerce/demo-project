@@ -1,0 +1,44 @@
+version: 2
+
+# Helpers
+defaults: &defaults
+  docker:
+    - image: mglaman/ci-images:circleci-php7.1-browsers
+  working_directory: ~/repo
+restore_cache: &restore_cache
+  keys:
+    - composer-{{ checksum "composer.json" }}
+    - composer-
+save_cache: &save_cache
+  paths:
+    - ./vendor
+    - ~/.composer/cache
+  key: composer-{{ checksum "composer.json" }}
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore_cache
+      - run:
+          name: Hirak
+          command: composer global require "hirak/prestissimo:^0.3"
+      - run:
+          name: Install dependencies
+          command: composer install -n --prefer-dist --no-dev
+      - run:
+          name: Install should pass.
+          command: scripts/demo-install.php install
+      - run:
+          name: Clean
+          command: composer run clean
+      - run:
+          name: Package it up
+          command: |
+            mkdir /tmp/artifacts;
+            tar --exclude=".git" --exclude="node_modules" -czvf /tmp/artifacts/demo-project.tar.gz .
+            zip -r /tmp/artifacts/demo-project.zip . -x node_modules/\* -1
+      - save_cache: *save_cache
+      - store_artifacts:
+          path: /tmp/artifacts
