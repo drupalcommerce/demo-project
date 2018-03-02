@@ -1540,12 +1540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojanz/commerce_demo.git",
-                "reference": "f21c353b3c117aa9524896190db7de29b937158c"
+                "reference": "24b692f60a57e4436ccf13fce779631ebc0414b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/f21c353b3c117aa9524896190db7de29b937158c",
-                "reference": "f21c353b3c117aa9524896190db7de29b937158c",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/24b692f60a57e4436ccf13fce779631ebc0414b9",
+                "reference": "24b692f60a57e4436ccf13fce779631ebc0414b9",
                 "shasum": ""
             },
             "require": {
@@ -1554,6 +1554,7 @@
                 "drupal/commerce_shipping": "^2.0",
                 "drupal/facets": "^1.0",
                 "drupal/facets_pretty_paths": "^1.0",
+                "drupal/image_delta_formatter": "1.x-dev",
                 "drupal/pathauto": "^1.0",
                 "drupal/search_api": "^1.0",
                 "drupal/taxonomy_term_depth": "2.x-dev"
@@ -1568,7 +1569,7 @@
                 "source": "https://github.com/bojanz/commerce_demo/tree/master",
                 "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-03-02T13:58:55+00:00"
+            "time": "2018-03-02T18:28:00+00:00"
         },
         {
             "name": "drupal/commerce_order",
@@ -2563,6 +2564,56 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/facets_pretty_paths"
             }
+        },
+        {
+            "name": "drupal/image_delta_formatter",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/image_delta_formatter",
+                "reference": "9fd039d54ac2e972f59ffebb5f7bdd13786cd9c3"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1490707383",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "fgm",
+                    "homepage": "https://www.drupal.org/user/27985"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                }
+            ],
+            "description": "Provides a formatter that displays a specific delta of a multivalue imagefield.",
+            "homepage": "https://www.drupal.org/project/image_delta_formatter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/image_delta_formatter"
+            },
+            "time": "2017-03-28T12:50:35+00:00"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -5668,16 +5719,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.35.0",
+            "version": "v1.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "daa657073e55b0a78cce8fdd22682fddecc6385f"
+                "reference": "ffda54d85cc3aec3ba499c8c0eda9b2176edfe83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/daa657073e55b0a78cce8fdd22682fddecc6385f",
-                "reference": "daa657073e55b0a78cce8fdd22682fddecc6385f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ffda54d85cc3aec3ba499c8c0eda9b2176edfe83",
+                "reference": "ffda54d85cc3aec3ba499c8c0eda9b2176edfe83",
                 "shasum": ""
             },
             "require": {
@@ -5729,7 +5780,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-09-27T18:06:46+00:00"
+            "time": "2018-03-02T18:06:27+00:00"
         },
         {
             "name": "webflo/drupal-finder",
