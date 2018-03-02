@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1eca40ede1832b477e1295397671e8b5",
+    "content-hash": "f581be1c47dbf91c0ee856939c71d49d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1256,6 +1256,10 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Revert c8111b5": "revert-2949264.patch",
+                    "Field templates broken because view mode changed to `_custom`": "https://www.drupal.org/files/issues/2949264-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1447,6 +1451,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Cannot theme product variation field values by view mode in custom hook suggestion": "https://www.drupal.org/files/issues/2949270-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
