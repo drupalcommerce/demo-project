@@ -1,12 +1,12 @@
 language: php
 php:
   - 7.1
-  - 7.2
 matrix:
   fast_finish: true
   allow_failures:
     - php: "7.2"
   include:
+    - php: "7.2"
     - php: "7.1"
       env: DRUPAL_CORE=~8.5
     - php: "7.1"
@@ -14,7 +14,7 @@ matrix:
 before_script:
   - phpenv config-rm xdebug.ini
   - composer --version
-  - if [[ "$DRUPAL_CORE" != none ]]; composer require drupal/core:$DRUPAL_CORE; fi
+  - if [[ "$DRUPAL_CORE" != none ]]; then composer require drupal/core:$DRUPAL_CORE; fi
 install:
   - composer install
 script:
