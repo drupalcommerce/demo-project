@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f581be1c47dbf91c0ee856939c71d49d",
+    "content-hash": "182f2c63107cb3a254b8eb5e053aea59",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1533,6 +1533,38 @@
                 "irc": "irc://irc.freenode.org/drupal-commerce"
             },
             "time": "2017-11-27T15:33:09+00:00"
+        },
+        {
+            "name": "drupal/commerce_cart_api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mglaman/commerce_cart_api.git",
+                "reference": "eb170b03720730fcb961f4616f06f1e1706afad3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_api/zipball/eb170b03720730fcb961f4616f06f1e1706afad3",
+                "reference": "eb170b03720730fcb961f4616f06f1e1706afad3",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/commerce": "^2.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "WIP",
+            "homepage": "https://www.drupal.org/project/commerce_cart_api",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/commerce_cart_api",
+                "source": "http://cgit.drupalcode.org/commerce_cart_api"
+            },
+            "time": "2018-03-04T20:48:24+00:00"
         },
         {
             "name": "drupal/commerce_demo",
@@ -7584,6 +7616,7 @@
     "stability-flags": {
         "drupal/belgrade": 20,
         "drupal/commerce_bootstrap": 20,
+        "drupal/commerce_cart_api": 20,
         "drupal/commerce_demo": 20,
         "drupal/facets": 10,
         "drupal/facets_pretty_paths": 10,

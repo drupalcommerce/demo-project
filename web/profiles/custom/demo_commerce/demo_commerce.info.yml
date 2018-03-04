@@ -68,6 +68,7 @@ dependencies:
   - search_api
   - search_api_db
   - commerce_demo
+  - commerce_cart_api
 
 themes:
   - belgrade

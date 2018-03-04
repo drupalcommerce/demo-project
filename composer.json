@@ -18,6 +18,10 @@
             "type": "vcs",
             "url": "https://github.com/bojanz/commerce_demo.git"
         },
+        "commerce_cart_api": {
+            "type": "vcs",
+            "url": "https://github.com/mglaman/commerce_cart_api.git"
+        },
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
@@ -38,6 +42,7 @@
         "drupal/color_field": "^2.0",
         "drupal/commerce": "~2.0",
         "drupal/commerce_bootstrap": "1.x-dev",
+        "drupal/commerce_cart_api": "dev-master",
         "drupal/commerce_demo": "dev-master",
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
