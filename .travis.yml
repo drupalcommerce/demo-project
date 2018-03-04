@@ -1,6 +1,14 @@
 language: php
 php:
   - 7.1
+  - 7.2
+matrix:
+  fast_finish: true
+  include:
+    - php: "7.1"
+      env: DRUPAL_CORE=~8.5
+    - php: "7.1"
+      env: DRUPAL_CORE=8.6.x-dev
 before_script:
   - phpenv config-rm xdebug.ini
   - composer --version
