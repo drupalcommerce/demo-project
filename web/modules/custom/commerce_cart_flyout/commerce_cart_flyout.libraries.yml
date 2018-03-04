@@ -1,0 +1,9 @@
+flyout:
+  version: VERSION
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/backbone
+    - core/underscore

@@ -1,0 +1,7 @@
+name: Commerce Cart Flyout
+description: Replaces the default cart block to use a offcanvas flyout
+core: 8.x
+type: module
+dependencies:
+  - commerce:commerce_cart
+  - commerce_cart_api:commerce_cart_api
