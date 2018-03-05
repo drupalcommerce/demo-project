@@ -1540,12 +1540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/commerce_cart_api.git",
-                "reference": "eb170b03720730fcb961f4616f06f1e1706afad3"
+                "reference": "bc6920f08c2dcbeb715c42d927dfea525ba8ad8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/commerce_cart_api/zipball/eb170b03720730fcb961f4616f06f1e1706afad3",
-                "reference": "eb170b03720730fcb961f4616f06f1e1706afad3",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_api/zipball/bc6920f08c2dcbeb715c42d927dfea525ba8ad8f",
+                "reference": "bc6920f08c2dcbeb715c42d927dfea525ba8ad8f",
                 "shasum": ""
             },
             "require": {
@@ -1564,7 +1564,7 @@
                 "issues": "https://www.drupal.org/project/issues/commerce_cart_api",
                 "source": "http://cgit.drupalcode.org/commerce_cart_api"
             },
-            "time": "2018-03-04T20:48:24+00:00"
+            "time": "2018-03-05T02:55:00+00:00"
         },
         {
             "name": "drupal/commerce_demo",
