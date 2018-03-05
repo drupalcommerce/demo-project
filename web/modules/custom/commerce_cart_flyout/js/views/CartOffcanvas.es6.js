@@ -26,19 +26,7 @@
           // This would allow us to use Twig since we do not need condiitonals.
           const template = Drupal.cartFlyout.getTemplate({
             id: 'commerce_cart_flyout_offcanvas',
-            data: '<div class="cart--cart-offcanvas">\n' +
-            '<% if (count > 0) { %>' +
-            '  <div class="cart-block--offcanvas-contents">\n' +
-            '    <div class="cart-block--offcanvas-contents__inner">\n' +
-            '      <div class="cart-block--offcanvas-contents__items">\n' +
-            '      </div>\n' +
-            '      <div class="cart-block--offcanvas-contents__links">\n' +
-            '        <%= links %>\n' +
-            '      </div>\n' +
-            '    </div>\n' +
-            '  </div>' +
-            '<% } %>' +
-            '</div>\n',
+            data: Drupal.cartFlyout.templates.offcanvas,
           });
           this.$el.html(template.render({
             count: this.model.getCount(),
@@ -58,11 +46,8 @@
         render() {
 
           const template = Drupal.cartFlyout.getTemplate({
-            id: 'commerce_cart_js_block_contents',
-            data:
-            '        <% _.each(carts, function(cart) { %>' +
-            '         <form data-cart-contents=\'<% print(JSON.stringify(cart)) %>\'></form>' +
-            '        <% }); %>'
+            id: 'commerce_cart_flyout_offcanvas_contents',
+            data: Drupal.cartFlyout.templates.offcanvas_contents
           });
           this.$el.html(template.render({
             carts: this.model.getCarts(),
@@ -70,7 +55,7 @@
 
           // @todo Cart model and Collection.
           this.$el.find('[data-cart-contents]').each(function () {
-            const contents = new Drupal.cartFlyout.CartContentsItemsView({
+            let contents = new Drupal.cartFlyout.CartContentsItemsView({
               el: this,
               model: Drupal.cartFlyout.model
             });
@@ -114,7 +99,7 @@
          */
         render() {
           const template = Drupal.cartFlyout.getTemplate({
-            id: 'commerce_cart_js_block_item_contents',
+            id: 'commerce_cart_flyout_offcanvas_contents_items',
             data:
             '        <table class="cart-block--offcanvas-cart-table table">' +
             '         <tbody>\n' +

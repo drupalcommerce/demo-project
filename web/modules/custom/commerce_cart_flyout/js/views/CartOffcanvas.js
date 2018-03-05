@@ -27,7 +27,7 @@
     render: function render() {
       var template = Drupal.cartFlyout.getTemplate({
         id: 'commerce_cart_flyout_offcanvas',
-        data: '<div class="cart--cart-offcanvas">\n' + '<% if (count > 0) { %>' + '  <div class="cart-block--offcanvas-contents">\n' + '    <div class="cart-block--offcanvas-contents__inner">\n' + '      <div class="cart-block--offcanvas-contents__items">\n' + '      </div>\n' + '      <div class="cart-block--offcanvas-contents__links">\n' + '        <%= links %>\n' + '      </div>\n' + '    </div>\n' + '  </div>' + '<% } %>' + '</div>\n'
+        data: Drupal.cartFlyout.templates.offcanvas
       });
       this.$el.html(template.render({
         count: this.model.getCount(),
@@ -44,8 +44,8 @@
     render: function render() {
 
       var template = Drupal.cartFlyout.getTemplate({
-        id: 'commerce_cart_js_block_contents',
-        data: '        <% _.each(carts, function(cart) { %>' + '         <form data-cart-contents=\'<% print(JSON.stringify(cart)) %>\'></form>' + '        <% }); %>'
+        id: 'commerce_cart_flyout_offcanvas_contents',
+        data: Drupal.cartFlyout.templates.offcanvas_contents
       });
       this.$el.html(template.render({
         carts: this.model.getCarts()
@@ -93,7 +93,7 @@
     },
     render: function render() {
       var template = Drupal.cartFlyout.getTemplate({
-        id: 'commerce_cart_js_block_item_contents',
+        id: 'commerce_cart_flyout_offcanvas_contents_items',
         data: '        <table class="cart-block--offcanvas-cart-table table">' + '         <tbody>\n' + '        <% _.each(cart.order_items, function(orderItem, key) { %>' + '            <tr>\n' + '              <td class="cart-block--offcanvas-cart-table__title"><%- orderItem.title %></td>\n' + '              <td class="cart-block--offcanvas-cart-table__quantity">' + '                <input type="number" data-key="<% print(key) %>" value="<% print(parseInt(orderItem.quantity)) %>" style="width: 35px" />' + '              </td>\n' + '              <td class="cart-block--offcanvas-cart-table__price"><%= orderItem.total_price.formatted %></td>\n' + '              <td class="cart-block--offcanvas-cart-table__remove"><button value="<% print(JSON.stringify([cart.order_id, orderItem.order_item_id]))  %>" class="button btn">x</button></td>' + '            </tr>\n' + '        <% }); %>' + '          </tbody>\n' + '          <tfoot>' + '<td/>' + '<td colspan="3"><button type="submit" class="cart-block--offcanvas-contents__update button btn btn-primary">Update quantities</button></td>' + '          </tfoot>' + '        </table>\n'
       });
       this.$el.html(template.render({

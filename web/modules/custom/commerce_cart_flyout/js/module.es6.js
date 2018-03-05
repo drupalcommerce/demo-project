@@ -6,6 +6,7 @@
     views: [],
     offcanvas: null,
     offcanvasBackground: null,
+    // @todo only require ID which loads template data from `Drupal.cartFlyout.templates[id]`
     getTemplate(data) {
       const id = data.id;
       if (!cache.hasOwnProperty(id)) {
