@@ -15,6 +15,7 @@
       'click .cart-block--offcanvas-cart-table__remove button': 'removeItem'
     },
     removeItem: function removeItem(e) {
+      e.preventDefault();
       var target = JSON.parse(e.target.value);
       var endpoint = Drupal.url('cart/' + target[0] + '/items/' + target[1] + '?_format=json');
       fetch(endpoint, {
