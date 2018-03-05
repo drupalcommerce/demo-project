@@ -1,0 +1,12 @@
+<?php
+
+function commerce_cart_flyout_theme() {
+  return [
+    'commerce_cart_flyout_block' => [
+      'render element' => 'elements',
+    ],
+    'commerce_cart_flyout_block_icon' => [
+      'render element' => 'elements',
+    ],
+  ];
+}

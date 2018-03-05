@@ -22,6 +22,8 @@
          */
         render() {
 
+          // @todo create a new View, or move `cart--cart-offcanvas`
+          // This would allow us to use Twig since we do not need condiitonals.
           const template = Drupal.cartFlyout.getTemplate({
             id: 'commerce_cart_flyout_offcanvas',
             data: '<div class="cart--cart-offcanvas">\n' +
@@ -58,11 +60,9 @@
           const template = Drupal.cartFlyout.getTemplate({
             id: 'commerce_cart_js_block_contents',
             data:
-            '<div>' +
             '        <% _.each(carts, function(cart) { %>' +
-            '         <div data-cart-contents=\'<% print(JSON.stringify(cart)) %>\'></div>' +
-            '        <% }); %>' +
-            '</div>'
+            '         <form data-cart-contents=\'<% print(JSON.stringify(cart)) %>\'></form>' +
+            '        <% }); %>'
           });
           this.$el.html(template.render({
             carts: this.model.getCarts(),
@@ -92,7 +92,8 @@
           const value = e.target.value;
           this.cart.order_items[targetDelta].quantity = parseInt(value);
         },
-        updateCart() {
+        updateCart(event) {
+          event.preventDefault();
           const endpoint = Drupal.url(`cart/${this.cart.order_id}/items?_format=json`);
           fetch(endpoint, {
             // By default cookies are not passed, and we need the session cookie!
@@ -115,7 +116,6 @@
           const template = Drupal.cartFlyout.getTemplate({
             id: 'commerce_cart_js_block_item_contents',
             data:
-            '        <div>\n' +
             '        <table class="cart-block--offcanvas-cart-table table">' +
             '         <tbody>\n' +
             '        <% _.each(cart.order_items, function(orderItem, key) { %>' +
@@ -131,10 +131,9 @@
             '          </tbody>\n' +
             '          <tfoot>' +
             '<td/>' +
-            '<td colspan="3"><button class="cart-block--offcanvas-contents__update button btn btn-primary">Update quantities</button></td>' +
+            '<td colspan="3"><button type="submit" class="cart-block--offcanvas-contents__update button btn btn-primary">Update quantities</button></td>' +
             '          </tfoot>' +
-            '        </table>\n' +
-            '        </div>'
+            '        </table>\n'
           });
           this.$el.html(template.render({
             cart: this.cart

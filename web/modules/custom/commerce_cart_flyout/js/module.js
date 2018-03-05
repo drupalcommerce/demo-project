@@ -8,6 +8,7 @@
 (function ($, _, Drupal, drupalSettings) {
   var cache = {};
   Drupal.cartFlyout = {
+    templates: {},
     models: [],
     views: [],
     offcanvas: null,
@@ -68,6 +69,7 @@
   };
   Drupal.behaviors.cartFlyout = {
     attach: function attach(context) {
+      Drupal.cartFlyout.templates = drupalSettings.cartFlyout.templates;
       $(context).find('.cart-flyout').once('cart-block-render').each(function () {
         Drupal.cartFlyout.createFlyout();
         var model = new Drupal.cartFlyout.CartBlockModel(drupalSettings.cartFlyout);

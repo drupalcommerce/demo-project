@@ -16,12 +16,15 @@
     },
     offcanvasOpen: function offcanvasOpen(event) {
       event.preventDefault();
-      Drupal.cartFlyout.flyoutOffcanvasToggle();
+
+      if (this.model.getCount() > 0) {
+        Drupal.cartFlyout.flyoutOffcanvasToggle();
+      }
     },
     render: function render() {
       var template = Drupal.cartFlyout.getTemplate({
         id: 'commerce_cart_flyout_block',
-        data: '<div class="cart--cart-block">\n' + '  <div class="cart-block--summary">\n' + '    <a class="cart-block--link__expand" href="<%= url %>">\n' + '      <span class="cart-block--summary__icon" />\n' + '      <span class="cart-block--summary__count"><%= count_text %></span>\n' + '    </a>\n' + '  </div>\n' + '</div>\n'
+        data: this.model.attributes.templates.block
       });
       this.$el.html(template.render({
         url: this.model.getUrl(),
@@ -37,12 +40,10 @@
     }
   });
   Drupal.cartFlyout.CartIconView = Backbone.View.extend({
-    initialize: function initialize() {},
     render: function render() {
-
       var template = Drupal.cartFlyout.getTemplate({
         id: 'commerce_cart_js_block_icon',
-        data: '<img src="<%= icon %>" alt="Cart"/>'
+        data: this.model.attributes.templates.icon
       });
       this.$el.html(template.render({
         icon: this.model.getIcon()
