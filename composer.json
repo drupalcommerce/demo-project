@@ -97,14 +97,8 @@
     "extra": {
         "patches": {
             "drupal/commerce": {
-                "Cannot theme product variation field values by view mode in custom hook suggestion":
-                "https://www.drupal.org/files/issues/2949270-5.patch"
-            },
-            "drupal/belgrade": {
-                "Revert c8111b5":
-                "revert-2949264.patch",
-                "Field templates broken because view mode changed to `_custom`":
-                "https://www.drupal.org/files/issues/2949264-5.patch"
+                "View mode fix":
+                "commerce-view-mode-fix.patch"
             }
         },
         "installer-types": [

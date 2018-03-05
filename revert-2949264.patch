@@ -1,4 +1,0 @@
-diff --git a/templates/commerce/field/field--commerce-product-variation--field-images---custom.html.twig b/templates/commerce/field/field--commerce-product-variation--field-images--full.html.twig
-similarity index 100%
-rename from templates/commerce/field/field--commerce-product-variation--field-images---custom.html.twig
-rename to templates/commerce/field/field--commerce-product-variation--field-images--full.html.twig
