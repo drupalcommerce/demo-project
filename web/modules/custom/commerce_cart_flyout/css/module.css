@@ -1,3 +1,10 @@
+body.navbar-is-static-top .cart-offcanvas {
+    padding-top: 39px;
+}
+body.navbar-is-static-top.toolbar-tray-open .cart-offcanvas {
+    padding-top: 79px;
+}
+
 .cart-offcanvas {
     position: fixed;
     min-height: 100%;

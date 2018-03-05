@@ -1,6 +1,8 @@
 (($, _, Drupal, drupalSettings) => {
   const cache = {};
   Drupal.cartFlyout = {
+    models: [],
+    views: [],
     offcanvas: null,
     offcanvasBackground: null,
     getTemplate(data) {
@@ -38,7 +40,7 @@
       Drupal.cartFlyout.offcanvasBackground.classList.toggle('is-open')
       Drupal.cartFlyout.offcanvasBackground.classList.toggle('is-closed')
     },
-    fetchCarts(model) {
+    fetchCarts() {
       // @todo will not work on IE11 w/o a polyfill.
       let data = fetch(Drupal.url(`cart?_format=json`), {
         // By default cookies are not passed, and we need the session cookie!
@@ -51,9 +53,11 @@
         for (let i in json) {
           count += json[i].order_items.length;
         }
-        model.set('count', count);
-        model.set('carts', json);
-        model.trigger('cartsLoaded', this);
+        _.each(Drupal.cartFlyout.models, (model) => {
+          model.set('count', count);
+          model.set('carts', json);
+          model.trigger('cartsLoaded', model);
+        });
       });
 
     }
@@ -65,11 +69,18 @@
         const model = new Drupal.cartFlyout.CartBlockModel(
           drupalSettings.cartFlyout
         );
+        Drupal.cartFlyout.models.push(model);
         const view = new Drupal.cartFlyout.CartBlockView({
           el: this,
           model,
         });
-        Drupal.cartFlyout.fetchCarts(model);
+        const offcanvasView = new Drupal.cartFlyout.CartOffcanvasView({
+          el: Drupal.cartFlyout.offcanvas,
+          model,
+        });
+        Drupal.cartFlyout.views.push(view);
+        Drupal.cartFlyout.views.push(offcanvasView);
+        Drupal.cartFlyout.fetchCarts();
       });
     }
   };

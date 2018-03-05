@@ -8,6 +8,8 @@
 (function ($, _, Drupal, drupalSettings) {
   var cache = {};
   Drupal.cartFlyout = {
+    models: [],
+    views: [],
     offcanvas: null,
     offcanvasBackground: null,
     getTemplate: function getTemplate(data) {
@@ -45,9 +47,7 @@
       Drupal.cartFlyout.offcanvasBackground.classList.toggle('is-open');
       Drupal.cartFlyout.offcanvasBackground.classList.toggle('is-closed');
     },
-    fetchCarts: function fetchCarts(model) {
-      var _this = this;
-
+    fetchCarts: function fetchCarts() {
       var data = fetch(Drupal.url('cart?_format=json'), {
         credentials: 'include'
       });
@@ -58,9 +58,11 @@
         for (var i in json) {
           count += json[i].order_items.length;
         }
-        model.set('count', count);
-        model.set('carts', json);
-        model.trigger('cartsLoaded', _this);
+        _.each(Drupal.cartFlyout.models, function (model) {
+          model.set('count', count);
+          model.set('carts', json);
+          model.trigger('cartsLoaded', model);
+        });
       });
     }
   };
@@ -69,11 +71,18 @@
       $(context).find('.cart-flyout').once('cart-block-render').each(function () {
         Drupal.cartFlyout.createFlyout();
         var model = new Drupal.cartFlyout.CartBlockModel(drupalSettings.cartFlyout);
+        Drupal.cartFlyout.models.push(model);
         var view = new Drupal.cartFlyout.CartBlockView({
           el: this,
           model: model
         });
-        Drupal.cartFlyout.fetchCarts(model);
+        var offcanvasView = new Drupal.cartFlyout.CartOffcanvasView({
+          el: Drupal.cartFlyout.offcanvas,
+          model: model
+        });
+        Drupal.cartFlyout.views.push(view);
+        Drupal.cartFlyout.views.push(offcanvasView);
+        Drupal.cartFlyout.fetchCarts();
       });
     }
   };

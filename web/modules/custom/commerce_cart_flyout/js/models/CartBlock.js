@@ -12,12 +12,16 @@
 
       count: 0,
 
+      carts: [],
+
       countText: {
         singular: '@count item',
         plural: '@count items'
       },
 
-      url: ''
+      url: '',
+
+      links: ['<a href="' + Drupal.url('cart') + '">' + Drupal.t('View cart') + '</a>']
     },
     getUrl: function getUrl() {
       return this.get('url');
@@ -33,6 +37,12 @@
     },
     getCountSingular: function getCountSingular() {
       return this.get('countText').singular;
+    },
+    getLinks: function getLinks() {
+      return this.get('links');
+    },
+    getCarts: function getCarts() {
+      return this.get('carts');
     }
   });
 })(Backbone, Drupal);

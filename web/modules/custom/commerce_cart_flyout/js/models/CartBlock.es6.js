@@ -21,6 +21,11 @@
         count: 0,
 
         /**
+         * @type {Array}
+         */
+        carts: [],
+
+        /**
          * @type {Object}
          */
         countText: {
@@ -32,6 +37,13 @@
          * @type {string}
          */
         url: '',
+
+        /**
+         * @type {Array}
+         */
+        links: [
+          `<a href="${Drupal.url('cart')}">${Drupal.t('View cart')}</a>`
+        ],
       },
       getUrl() {
         return this.get('url');
@@ -48,5 +60,11 @@
       getCountSingular() {
         return this.get('countText').singular;
       },
+      getLinks() {
+        return this.get('links');
+      },
+      getCarts() {
+        return this.get('carts');
+      }
     });
 })(Backbone, Drupal);

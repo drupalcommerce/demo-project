@@ -4,6 +4,7 @@ flyout:
     js/module.js: { }
     js/models/CartBlock.js: { }
     js/views/CartBlock.js: { }
+    js/views/CartOffcanvas.js: { }
   css:
     theme:
       css/module.css: { }

@@ -12,7 +12,7 @@
         },
         render() {
             const template = Drupal.cartFlyout.getTemplate({
-                id: 'commerce_cart_js_block',
+                id: 'commerce_cart_flyout_block',
                 data: '<div class="cart--cart-block">\n' +
                 '  <div class="cart-block--summary">\n' +
                 '    <a class="cart-block--link__expand" href="<%= url %>">\n' +
