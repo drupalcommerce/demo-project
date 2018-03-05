@@ -1,0 +1,60 @@
+body.navbar-is-static-top .cart-offcanvas {
+    padding-top: 39px;
+}
+body.navbar-is-static-top.toolbar-tray-open .cart-offcanvas {
+    padding-top: 79px;
+}
+
+.cart-offcanvas {
+    position: fixed;
+    min-height: 100%;
+    max-height: none;
+    top: 0;
+    display: block;
+    background: #fff;
+    transition: transform .3s cubic-bezier(.4,0,.6,1);
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 1000;
+}
+.cart-offcanvas--left {
+    height: 100%;
+    width: 24em;
+    transform: translate3d(-17em, 0, 0);
+}
+.cart-offcanvas--right {
+    height: 100%;
+    width: 24em;
+    right: 0;
+    transform: translate3d(17em,0,0);
+}
+.cart-offcanvas.is-open {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+.cart-offcanvas.is-closed {
+    max-height: 100%;
+    visibility: hidden;
+    box-shadow: none;
+}
+
+.cart-offcanvas-bg {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    left: -100%;
+    background-color: transparent;
+    transition: background-color .4s cubic-bezier(.23,1,.32,1) 0s;
+}
+.cart-offcanvas-bg.is-animating,
+.cart-offcanvas-bg.is-open {
+    left: 0;
+    background-color: rgba(0,0,0,.68);
+    visibility: visible;
+}
+.cart-offcanvas-bg.is-closed {
+    visibility: hidden;
+}

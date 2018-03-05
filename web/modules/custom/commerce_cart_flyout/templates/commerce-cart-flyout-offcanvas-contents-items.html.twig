@@ -1,0 +1,22 @@
+<table class="cart-block--offcanvas-cart-table table">
+    <tbody>
+    <% _.each(cart.order_items, function(orderItem, key) { %>
+        <tr>
+            <td class="cart-block--offcanvas-cart-table__title"><%- orderItem.title %></td>
+            <td class="cart-block--offcanvas-cart-table__quantity">
+                <input type="number" data-key="<% print(key) %>" value="<% print(parseInt(orderItem.quantity)) %>" style="width: 35px" />
+            </td>
+            <td class="cart-block--offcanvas-cart-table__price"><%= orderItem.total_price.formatted %></td>
+            <td class="cart-block--offcanvas-cart-table__remove">
+                <button value="<% print(JSON.stringify([cart.order_id, orderItem.order_item_id]))  %>" class="button btn">x</button>
+            </td>
+        </tr>
+    <% } %>
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td colspan="3">
+            <button type="submit" class="cart-block--offcanvas-contents__update button btn btn-primary">Update quantities</button>
+        </td>
+    </tfoot>
+</table>

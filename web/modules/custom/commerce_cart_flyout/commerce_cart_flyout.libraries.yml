@@ -1,0 +1,17 @@
+flyout:
+  version: VERSION
+  js:
+    js/module.js: { }
+    js/models/CartBlock.js: { }
+    js/views/CartBlock.js: { }
+    js/views/CartOffcanvas.js: { }
+  css:
+    theme:
+      css/module.css: { }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/backbone
+    - core/underscore
