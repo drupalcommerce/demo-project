@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\commerce_cart_js\Plugin\Block;
+namespace Drupal\commerce_cart_flyout\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Render\Markup;
@@ -24,10 +24,16 @@ class CartBlock extends BlockBase {
     return [
       '#attached' => [
         'library' => [
-          'commerce_cart_flyout/cart',
+          'commerce_cart_flyout/flyout',
+        ],
+        'drupalSettings' => [
+          'cartFlyout' => [
+            'url' => Url::fromRoute('commerce_cart.page')->toString(),
+            'icon' => file_create_url(drupal_get_path('module', 'commerce') . '/icons/ffffff/cart.png'),
+          ],
         ],
       ],
-      '#markup' => Markup::create('<div class="commerce_cart_flyout"></div>'),
+      '#markup' => Markup::create('<div class="cart-flyout"></div>'),
     ];
   }
 

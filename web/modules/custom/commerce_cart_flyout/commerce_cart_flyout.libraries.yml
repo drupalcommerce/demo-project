@@ -1,5 +1,12 @@
 flyout:
   version: VERSION
+  js:
+    js/module.js: { }
+    js/models/CartBlock.js: { }
+    js/views/CartBlock.js: { }
+  css:
+    theme:
+      css/module.css: { }
   dependencies:
     - core/jquery
     - core/jquery.once
