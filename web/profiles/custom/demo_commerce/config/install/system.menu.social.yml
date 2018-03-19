@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: social
-label: Social
-description: ''
-locked: false
