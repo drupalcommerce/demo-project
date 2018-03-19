@@ -29,7 +29,10 @@
     },
     "config": {
       "bin-dir": "bin",
-      "sort-packages": true
+      "sort-packages": true,
+      "platform": {
+          "php": "5.6"
+      }
     },
     "require": {
         "ext-curl": "*",
@@ -95,12 +98,7 @@
         ]
     },
     "extra": {
-        "patches": {
-            "drupal/commerce": {
-                "View mode fix":
-                "commerce-view-mode-fix.patch"
-            }
-        },
+        "patches": {},
         "installer-types": [
             "bower-asset",
             "npm-asset"
