@@ -1528,12 +1528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/commerce_cart_api.git",
-                "reference": "7fe62c199adfabc544fc199390bbdd35d551e23d"
+                "reference": "9e01a0226bf8b8d2cf5782b3617fef9dda11ff29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/commerce_cart_api/zipball/7fe62c199adfabc544fc199390bbdd35d551e23d",
-                "reference": "7fe62c199adfabc544fc199390bbdd35d551e23d",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_api/zipball/9e01a0226bf8b8d2cf5782b3617fef9dda11ff29",
+                "reference": "9e01a0226bf8b8d2cf5782b3617fef9dda11ff29",
                 "shasum": ""
             },
             "require": {
@@ -1552,7 +1552,7 @@
                 "issues": "https://www.drupal.org/project/issues/commerce_cart_api",
                 "source": "http://cgit.drupalcode.org/commerce_cart_api"
             },
-            "time": "2018-03-07T05:50:53+00:00"
+            "time": "2018-03-20T19:56:12+00:00"
         },
         {
             "name": "drupal/commerce_demo",
@@ -5891,16 +5891,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.35.2",
+            "version": "v1.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "9c24f2cd39dc1906b76879e099970b7e53724601"
+                "reference": "b48680b6eb7d16b5025b9bfc4108d86f6b8af86f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9c24f2cd39dc1906b76879e099970b7e53724601",
-                "reference": "9c24f2cd39dc1906b76879e099970b7e53724601",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b48680b6eb7d16b5025b9bfc4108d86f6b8af86f",
+                "reference": "b48680b6eb7d16b5025b9bfc4108d86f6b8af86f",
                 "shasum": ""
             },
             "require": {
@@ -5908,8 +5908,8 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -5952,7 +5952,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-03-03T16:21:29+00:00"
+            "time": "2018-03-20T04:25:58+00:00"
         },
         {
             "name": "webflo/drupal-finder",
