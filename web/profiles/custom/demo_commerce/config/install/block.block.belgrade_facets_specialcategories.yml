@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.special_categories
+  module:
+    - facets
+    - system
+  theme:
+    - belgrade
+id: belgrade_facets_specialcategories
+theme: belgrade
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:special_categories'
+settings:
+  id: 'facet_block:special_categories'
+  label: 'Special categories'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products\r\n/products/*"
+    negate: false
+    context_mapping: {  }
