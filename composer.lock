@@ -1560,12 +1560,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojanz/commerce_demo.git",
-                "reference": "e1849c69fd7fe91a455207524b6621fa4c611045"
+                "reference": "f53f227d084bab94045cd39b92748b365c818430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/e1849c69fd7fe91a455207524b6621fa4c611045",
-                "reference": "e1849c69fd7fe91a455207524b6621fa4c611045",
+                "url": "https://api.github.com/repos/bojanz/commerce_demo/zipball/f53f227d084bab94045cd39b92748b365c818430",
+                "reference": "f53f227d084bab94045cd39b92748b365c818430",
                 "shasum": ""
             },
             "require": {
@@ -1574,7 +1574,7 @@
                 "drupal/commerce_shipping": "^2.0",
                 "drupal/facets": "^1.0",
                 "drupal/facets_pretty_paths": "^1.0",
-                "drupal/image_delta_formatter": "1.x-dev",
+                "drupal/image_delta_formatter": "^1.0",
                 "drupal/pathauto": "^1.0",
                 "drupal/search_api": "^1.0",
                 "drupal/taxonomy_menu": "^3.3",
@@ -1590,7 +1590,7 @@
                 "source": "https://github.com/bojanz/commerce_demo/tree/master",
                 "issues": "https://github.com/bojanz/commerce_demo/issues"
             },
-            "time": "2018-03-20T20:22:49+00:00"
+            "time": "2018-03-21T21:29:06+00:00"
         },
         {
             "name": "drupal/commerce_order",
@@ -1818,16 +1818,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "f4edcad048bd70fa2e74a6858c061425117c1ace"
+                "reference": "368bbfa44dc6b957eb4db01977f7c39e83032d18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/f4edcad048bd70fa2e74a6858c061425117c1ace",
-                "reference": "f4edcad048bd70fa2e74a6858c061425117c1ace",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/368bbfa44dc6b957eb4db01977f7c39e83032d18",
+                "reference": "368bbfa44dc6b957eb4db01977f7c39e83032d18",
                 "shasum": ""
             },
             "require": {
@@ -1835,7 +1835,7 @@
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "^1.2",
                 "doctrine/collections": "^1.3",
-                "drupal/console-core": "1.7.0",
+                "drupal/console-core": "1.8.0",
                 "drupal/console-extend-plugin": "~0",
                 "guzzlehttp/guzzle": "~6.1",
                 "php": "^5.5.9 || ^7.0",
@@ -1894,25 +1894,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2018-03-06T21:58:52+00:00"
+            "time": "2018-03-21T20:50:16+00:00"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "af8b3e42d225a2782f14163aafdeebbc486fd3e5"
+                "reference": "bf1fb4a6f689377acec1694267f674178d28e5d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/af8b3e42d225a2782f14163aafdeebbc486fd3e5",
-                "reference": "af8b3e42d225a2782f14163aafdeebbc486fd3e5",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/bf1fb4a6f689377acec1694267f674178d28e5d1",
+                "reference": "bf1fb4a6f689377acec1694267f674178d28e5d1",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-configuration": "^1.0",
-                "drupal/console-en": "1.7.0",
+                "drupal/console-en": "1.8.0",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": "~2.8|~3.0",
@@ -1975,20 +1975,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2018-03-06T21:34:03+00:00"
+            "time": "2018-03-21T19:33:23+00:00"
         },
         {
             "name": "drupal/console-en",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "916e121fad50155fc96d1fc98fed2e4aa0d6cd85"
+                "reference": "ea956ddffab04f519a89858810e5f695b9def92b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/916e121fad50155fc96d1fc98fed2e4aa0d6cd85",
-                "reference": "916e121fad50155fc96d1fc98fed2e4aa0d6cd85",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/ea956ddffab04f519a89858810e5f695b9def92b",
+                "reference": "ea956ddffab04f519a89858810e5f695b9def92b",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -2029,7 +2029,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2018-03-06T15:51:54+00:00"
+            "time": "2018-03-21T19:16:27+00:00"
         },
         {
             "name": "drupal/console-extend-plugin",
@@ -2635,11 +2635,17 @@
         },
         {
             "name": "drupal/image_delta_formatter",
-            "version": "dev-1.x",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/image_delta_formatter",
-                "reference": "9fd039d54ac2e972f59ffebb5f7bdd13786cd9c3"
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_delta_formatter-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "30df2a70ac6d872c282083529592f5b57a6066da"
             },
             "require": {
                 "drupal/core": "*"
@@ -2650,11 +2656,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1490707383",
+                    "version": "8.x-1.0",
+                    "datestamp": "1521667380",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2674,14 +2680,17 @@
                 {
                     "name": "jsacksick",
                     "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Provides a formatter that displays a specific delta of a multivalue imagefield.",
             "homepage": "https://www.drupal.org/project/image_delta_formatter",
             "support": {
                 "source": "http://cgit.drupalcode.org/image_delta_formatter"
-            },
-            "time": "2017-03-28T12:50:35+00:00"
+            }
         },
         {
             "name": "drupal/inline_entity_form",
