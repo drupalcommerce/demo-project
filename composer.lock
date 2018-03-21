@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f19bfa99d18234de83b45bf6e72b633b",
+    "content-hash": "e193bdfd62b77815f1f6c5a670f63f18",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1553,6 +1553,38 @@
                 "source": "http://cgit.drupalcode.org/commerce_cart_api"
             },
             "time": "2018-03-20T19:56:12+00:00"
+        },
+        {
+            "name": "drupal/commerce_cart_flyout",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mglaman/commerce_cart_flyout.git",
+                "reference": "f50fe20b060a5d41e6df125c4e453b3804ca9608"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/f50fe20b060a5d41e6df125c4e453b3804ca9608",
+                "reference": "f50fe20b060a5d41e6df125c4e453b3804ca9608",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/commerce": "^2.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "WIP",
+            "homepage": "https://www.drupal.org/project/commerce_cart_flyout",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/commerce_cart_flyout",
+                "source": "http://cgit.drupalcode.org/commerce_cart_flyout"
+            },
+            "time": "2018-03-21T21:38:54+00:00"
         },
         {
             "name": "drupal/commerce_demo",
@@ -7761,6 +7793,7 @@
         "drupal/commerce_bootstrap": 20,
         "drupal/commerce_cart_api": 20,
         "drupal/commerce_demo": 20,
+        "drupal/commerce_cart_flyout": 20,
         "drupal/facets": 10,
         "drupal/facets_pretty_paths": 10,
         "behat/mink": 20
