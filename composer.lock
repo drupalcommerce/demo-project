@@ -1234,7 +1234,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/belgrade",
-                "reference": "fd2d88f87bccb37accb652a6467d8a3298d96a52"
+                "reference": "488c664e8453f475cd6a86eedc676720c917c4a3"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1247,7 +1247,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522082880",
+                    "datestamp": "1522083780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1281,7 +1281,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
             },
-            "time": "2018-03-26T17:00:22+00:00"
+            "time": "2018-03-26T17:31:22+00:00"
         },
         {
             "name": "drupal/bootstrap",
