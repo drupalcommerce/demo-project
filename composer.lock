@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc82d8bd49763eee0709f8c174b3fa74",
+    "content-hash": "a6197004f61bb1691e6bd074565b2e22",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2610,21 +2610,16 @@
         },
         {
             "name": "drupal/facets_pretty_paths",
-            "version": "1.0.0-beta1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/facets_pretty_paths",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets_pretty_paths-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "38d2c0cf552fd8fde208872433f3ab7c0c425369"
+                "reference": "4626432c9fa89454aeefdd8da1c9827e5d2b191a"
             },
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/facets": "*"
+                "drupal/facets": "*",
+                "drupal/pathauto": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2632,8 +2627,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1516716485",
+                    "version": "8.x-1.0-beta1+3-dev",
+                    "datestamp": "1521730980",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2658,7 +2653,8 @@
             "homepage": "https://www.drupal.org/project/facets_pretty_paths",
             "support": {
                 "source": "http://cgit.drupalcode.org/facets_pretty_paths"
-            }
+            },
+            "time": "2018-03-22T15:29:46+00:00"
         },
         {
             "name": "drupal/image_delta_formatter",
@@ -7790,7 +7786,7 @@
         "drupal/commerce_cart_flyout": 20,
         "drupal/commerce_demo": 20,
         "drupal/facets": 20,
-        "drupal/facets_pretty_paths": 10,
+        "drupal/facets_pretty_paths": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,

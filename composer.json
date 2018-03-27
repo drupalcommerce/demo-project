@@ -55,7 +55,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
         "drupal/facets": "1.x-dev",
-        "drupal/facets_pretty_paths": "^1.0@beta",
+        "drupal/facets_pretty_paths": "1.x-dev",
         "drupal/search_api": "~1.0",
         "drupal/swiftmailer": "~1.0",
         "drupal/taxonomy_menu": "^3.3",
