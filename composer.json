@@ -14,10 +14,6 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "commerce_demo": {
-            "type": "vcs",
-            "url": "https://github.com/bojanz/commerce_demo.git"
-        },
         "commerce_cart_api": {
             "type": "vcs",
             "url": "https://github.com/mglaman/commerce_cart_api.git"

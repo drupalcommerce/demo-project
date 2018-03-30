@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6197004f61bb1691e6bd074565b2e22",
+    "content-hash": "9d9c396638903be024ed8f5abddfaf9d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1560,12 +1560,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/commerce_cart_flyout.git",
-                "reference": "0ff9e228cddd3aed58935405a290dc3b003a2b7f"
+                "reference": "54e1ed4b4c918c382aa55964f985be56bd800245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/0ff9e228cddd3aed58935405a290dc3b003a2b7f",
-                "reference": "0ff9e228cddd3aed58935405a290dc3b003a2b7f",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/54e1ed4b4c918c382aa55964f985be56bd800245",
+                "reference": "54e1ed4b4c918c382aa55964f985be56bd800245",
                 "shasum": ""
             },
             "require": {
@@ -1584,7 +1584,7 @@
                 "issues": "https://www.drupal.org/project/issues/commerce_cart_flyout",
                 "source": "http://cgit.drupalcode.org/commerce_cart_flyout"
             },
-            "time": "2018-03-28T16:49:10+00:00"
+            "time": "2018-03-30T19:27:49+00:00"
         },
         {
             "name": "drupal/commerce_demo",
@@ -2106,16 +2106,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.0",
+            "version": "8.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "0b9070370e272da441b4be52561c559c05f4553d"
+                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/0b9070370e272da441b4be52561c559c05f4553d",
-                "reference": "0b9070370e272da441b4be52561c559c05f4553d",
+                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
                 "shasum": ""
             },
             "require": {
@@ -2337,7 +2337,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-07T21:10:20+00:00"
+            "time": "2018-03-27T09:58:42+00:00"
         },
         {
             "name": "drupal/ctools",
