@@ -1705,7 +1705,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce_demo",
-                "reference": "236bba94efdd7cd45ff4ff948a68a89580889a4e"
+                "reference": "f0c3f37bfd4560f414cf350487c12b943f24bd02"
             },
             "require": {
                 "drupal/color_field": "^2.0",
@@ -1732,7 +1732,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522669084",
+                    "datestamp": "1522672985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1754,7 +1754,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce_demo"
             },
-            "time": "2018-04-02T12:41:36+00:00"
+            "time": "2018-04-02T16:12:25+00:00"
         },
         {
             "name": "drupal/commerce_order",
