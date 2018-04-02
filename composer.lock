@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bc51b23fbe586b643e46cd11d7be15f",
+    "content-hash": "5094f748f83e572d660c975beb80f086",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1283,8 +1283,7 @@
             "homepage": "http://drupal.org/project/belgrade",
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
-            },
-            "time": "2018-04-02T18:07:53+00:00"
+            }
         },
         {
             "name": "drupal/bootstrap",
