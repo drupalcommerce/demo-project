@@ -85,6 +85,7 @@
     },
     "scripts": {
         "preview": "composer install && scripts/demo-install.php install && scripts/demo-install.php start",
+        "docker": "composer install && scripts/demo-install.php install && cd web && php -S localhost:8080 .ht.router.php -t",
         "clean": "chmod 775 web/sites/default; chmod 664 web/sites/default/settings.php; rm web/sites/default/settings.php; rm web/sites/default/files/.sqlite*; rm -rf web/sites/default/files/*",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
