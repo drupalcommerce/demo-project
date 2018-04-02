@@ -29,6 +29,7 @@
     },
     "config": {
       "bin-dir": "bin",
+      "discard-changes": true,
       "sort-packages": true,
       "platform": {
           "php": "5.6"
