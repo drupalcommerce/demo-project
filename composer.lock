@@ -1254,7 +1254,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-01/2957740.patch"
+                    "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-02/2957740-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1705,7 +1705,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce_demo",
-                "reference": "f0c3f37bfd4560f414cf350487c12b943f24bd02"
+                "reference": "974ab9e20bc9f77679463702e3f3484f209dd969"
             },
             "require": {
                 "drupal/color_field": "^2.0",
@@ -1732,7 +1732,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522672985",
+                    "datestamp": "1522685584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1747,6 +1747,10 @@
                 {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Demo module for Drupal Commerce.",
@@ -1754,7 +1758,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce_demo"
             },
-            "time": "2018-04-02T16:12:25+00:00"
+            "time": "2018-04-02T20:42:55+00:00"
         },
         {
             "name": "drupal/commerce_order",
