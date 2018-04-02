@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "779a90c26ab481b196af383c6669cc1d",
+    "content-hash": "7bc51b23fbe586b643e46cd11d7be15f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1234,7 +1234,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/belgrade",
-                "reference": "488c664e8453f475cd6a86eedc676720c917c4a3"
+                "reference": "6271bd0698eb9eb45bc75dbdfa3156672ef219c4"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1247,14 +1247,13 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522083780",
+                    "datestamp": "1522085580",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
-                    "Customize frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957730.patch",
                     "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-01/2957740.patch"
                 }
             },
@@ -1285,7 +1284,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
             },
-            "time": "2018-03-26T17:31:22+00:00"
+            "time": "2018-04-02T13:53:51+00:00"
         },
         {
             "name": "drupal/bootstrap",
@@ -1619,12 +1618,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/commerce_cart_flyout.git",
-                "reference": "54e1ed4b4c918c382aa55964f985be56bd800245"
+                "reference": "2098c1a2bdf6fbefc5ee77516abe630a72b7589f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/54e1ed4b4c918c382aa55964f985be56bd800245",
-                "reference": "54e1ed4b4c918c382aa55964f985be56bd800245",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/2098c1a2bdf6fbefc5ee77516abe630a72b7589f",
+                "reference": "2098c1a2bdf6fbefc5ee77516abe630a72b7589f",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1642,7 @@
                 "issues": "https://www.drupal.org/project/issues/commerce_cart_flyout",
                 "source": "http://cgit.drupalcode.org/commerce_cart_flyout"
             },
-            "time": "2018-03-30T19:27:49+00:00"
+            "time": "2018-04-02T15:02:52+00:00"
         },
         {
             "name": "drupal/commerce_checkout",
@@ -1706,7 +1705,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce_demo",
-                "reference": "3b61a87dfcbbbc368002a5181ef93ceb8bf393fa"
+                "reference": "236bba94efdd7cd45ff4ff948a68a89580889a4e"
             },
             "require": {
                 "drupal/color_field": "^2.0",
@@ -1733,14 +1732,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522414384",
+                    "datestamp": "1522669084",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957729.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1758,7 +1754,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce_demo"
             },
-            "time": "2018-03-30T13:25:38+00:00"
+            "time": "2018-04-02T12:41:36+00:00"
         },
         {
             "name": "drupal/commerce_order",
@@ -4482,16 +4478,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.17",
+            "version": "v0.8.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "5069b70e8c4ea492c2b5939b6eddc78bfe41cfec"
+                "reference": "5357b1cffc8fb375d6a9e3c86d5c82dd38a40834"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5069b70e8c4ea492c2b5939b6eddc78bfe41cfec",
-                "reference": "5069b70e8c4ea492c2b5939b6eddc78bfe41cfec",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5357b1cffc8fb375d6a9e3c86d5c82dd38a40834",
+                "reference": "5357b1cffc8fb375d6a9e3c86d5c82dd38a40834",
                 "shasum": ""
             },
             "require": {
@@ -4550,7 +4546,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-12-28T16:14:16+00:00"
+            "time": "2018-04-02T05:41:44+00:00"
         },
         {
             "name": "stack/builder",
