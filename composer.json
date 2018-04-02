@@ -44,6 +44,7 @@
         "drupal/bootstrap": "^3.10",
         "drupal/color_field": "^2.0",
         "drupal/commerce": "~2.0",
+        "drupal/commerce_avatax": "1.x-dev",
         "drupal/commerce_bootstrap": "1.x-dev",
         "drupal/commerce_cart_api": "dev-master",
         "drupal/commerce_cart_flyout": "dev-master",

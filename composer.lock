@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "779a90c26ab481b196af383c6669cc1d",
+    "content-hash": "41b7d4fc112961711b07635fdbd5a378",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1479,6 +1479,74 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce"
             }
+        },
+        {
+            "name": "drupal/commerce_avatax",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/commerce_avatax",
+                "reference": "e0190cd19088d96b44cdefcd30d88b6098472864"
+            },
+            "require": {
+                "drupal/commerce": "~2.0",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1509037144",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "steveoliver",
+                    "homepage": "https://www.drupal.org/user/42327"
+                }
+            ],
+            "description": "Provides integration between Drupal Commerce and Avalara AvaTax.",
+            "homepage": "https://www.drupal.org/project/commerce_avatax",
+            "keywords": [
+                "AvaTax",
+                "Avalara",
+                "Commerce",
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/commerce_avatax",
+                "issues": "http://drupal.org/project/issues/commerce_avatax"
+            },
+            "time": "2017-10-26T16:56:36+00:00"
         },
         {
             "name": "drupal/commerce_bootstrap",
@@ -8067,6 +8135,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/belgrade": 20,
+        "drupal/commerce_avatax": 20,
         "drupal/commerce_bootstrap": 20,
         "drupal/commerce_cart_api": 20,
         "drupal/commerce_cart_flyout": 20,

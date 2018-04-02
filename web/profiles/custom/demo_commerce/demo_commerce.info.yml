@@ -70,6 +70,7 @@ dependencies:
   - commerce_demo
   - commerce_cart_api
   - commerce_cart_flyout
+  - commerce_avatax
 
 themes:
   - belgrade
