@@ -47,7 +47,7 @@
         "drupal/commerce_bootstrap": "1.x-dev",
         "drupal/commerce_cart_api": "dev-master",
         "drupal/commerce_cart_flyout": "dev-master",
-        "drupal/commerce_demo": "dev-master",
+        "drupal/commerce_demo": "1.x-dev",
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
         "drupal/facets": "1.x-dev",
@@ -99,7 +99,14 @@
         ]
     },
     "extra": {
-        "patches": {},
+        "patches": {
+          "drupal/commerce_demo": {
+            "Frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957729.patch"
+          },
+          "drupal/belgrade": {
+            "Customize frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957730.patch"
+          }
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
