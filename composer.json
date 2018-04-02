@@ -104,7 +104,8 @@
             "Frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957729.patch"
           },
           "drupal/belgrade": {
-            "Customize frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957730.patch"
+            "Customize frontpage": "https://www.drupal.org/files/issues/2018-04-01/2957730.patch",
+            "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-01/2957740.patch"
           }
         },
         "installer-types": [
