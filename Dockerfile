@@ -31,4 +31,4 @@ COPY . .
 EXPOSE 8080
 RUN /usr/local/bin/composer install
 
-CMD ["/usr/local/bin/composer", "docker"]
+CMD ["/usr/local/bin/composer", "docker-entrypoint"]
