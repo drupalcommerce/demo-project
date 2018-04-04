@@ -101,9 +101,6 @@
     },
     "extra": {
         "patches": {
-          "drupal/belgrade": {
-            "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-01/2957740.patch"
-          }
         },
         "installer-types": [
             "bower-asset",
