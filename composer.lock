@@ -1615,12 +1615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/commerce_cart_flyout.git",
-                "reference": "43602e399f2c6afbe37d472f56315ace143cabb5"
+                "reference": "fa7f52b0ae40e588ea4af7ce94edf002e11ad8a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/43602e399f2c6afbe37d472f56315ace143cabb5",
-                "reference": "43602e399f2c6afbe37d472f56315ace143cabb5",
+                "url": "https://api.github.com/repos/mglaman/commerce_cart_flyout/zipball/fa7f52b0ae40e588ea4af7ce94edf002e11ad8a2",
+                "reference": "fa7f52b0ae40e588ea4af7ce94edf002e11ad8a2",
                 "shasum": ""
             },
             "require": {
@@ -1639,7 +1639,7 @@
                 "issues": "https://www.drupal.org/project/issues/commerce_cart_flyout",
                 "source": "http://cgit.drupalcode.org/commerce_cart_flyout"
             },
-            "time": "2018-04-05T04:06:09+00:00"
+            "time": "2018-04-05T04:27:43+00:00"
         },
         {
             "name": "drupal/commerce_checkout",
