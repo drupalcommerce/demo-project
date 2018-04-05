@@ -1234,7 +1234,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/belgrade",
-                "reference": "594a64b90bf51584f238ad5d02a0686337854a60"
+                "reference": "be1db97becbc39cec683f99a2179be33ece9e2e3"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1247,7 +1247,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522864380",
+                    "datestamp": "1522931584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1281,7 +1281,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/belgrade"
             },
-            "time": "2018-04-05T12:21:16+00:00"
+            "time": "2018-04-05T12:49:08+00:00"
         },
         {
             "name": "drupal/bootstrap",
@@ -1702,7 +1702,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce_demo",
-                "reference": "974ab9e20bc9f77679463702e3f3484f209dd969"
+                "reference": "d0366458659cba9d6080d9ae35e03f50a2c49800"
             },
             "require": {
                 "drupal/color_field": "^2.0",
@@ -1729,7 +1729,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1522685584",
+                    "datestamp": "1522701784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1755,7 +1755,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/commerce_demo"
             },
-            "time": "2018-04-02T20:42:55+00:00"
+            "time": "2018-04-05T12:43:40+00:00"
         },
         {
             "name": "drupal/commerce_order",
