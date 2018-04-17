@@ -14,10 +14,6 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "commerce_cart_api": {
-            "type": "vcs",
-            "url": "https://github.com/mglaman/commerce_cart_api.git"
-        },
         "commerce_cart_flyout": {
             "type": "vcs",
             "url": "https://github.com/mglaman/commerce_cart_flyout.git"
@@ -46,13 +42,14 @@
         "drupal/color_field": "^2.0",
         "drupal/commerce": "~2.0",
         "drupal/commerce_bootstrap": "1.x-dev",
-        "drupal/commerce_cart_api": "dev-master",
+        "drupal/commerce_cart_api": "^1.0",
         "drupal/commerce_cart_flyout": "dev-master",
         "drupal/commerce_demo": "1.x-dev",
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
         "drupal/facets": "1.x-dev",
         "drupal/facets_pretty_paths": "1.x-dev",
+        "drupal/jsonapi": "^1.15",
         "drupal/search_api": "~1.0",
         "drupal/swiftmailer": "~1.0",
         "drupal/taxonomy_menu": "^3.3",
