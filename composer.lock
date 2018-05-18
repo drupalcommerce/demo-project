@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd26778de0651bcb2ef6eff517e9074d",
+    "content-hash": "2f24fff904033d34e6518920cc7ba285",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1461,10 +1461,6 @@
             ],
             "authors": [
                 {
-                    "name": "Damien Tournoud",
-                    "homepage": "https://www.drupal.org/user/22211"
-                },
-                {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
                 },
@@ -2851,11 +2847,17 @@
         },
         {
             "name": "drupal/facets",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/facets",
-                "reference": "345525d13538c57a8a190f5b71aaa9ba9e723b02"
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "3dfeb0a353039ee8a6554bad9f6d02ec7cadee24"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2869,8 +2871,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+8-dev",
-                    "datestamp": "1520669884",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1516352268",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2901,16 +2903,21 @@
                 "source": "git://git.drupal.org/project/facets.git",
                 "issues": "https://www.drupal.org/project/issues/facets",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
-            },
-            "time": "2018-03-23T17:43:07+00:00"
+            }
         },
         {
             "name": "drupal/facets_pretty_paths",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/facets_pretty_paths",
-                "reference": "1f8aff26fe541e6a60ceb5376cd189a12b5aa1ba"
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets_pretty_paths-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "bba4c51b18e4f2eb83b67f50224530b0f88be540"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2923,8 +2930,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+6-dev",
-                    "datestamp": "1526298782",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1526299084",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2949,8 +2956,7 @@
             "homepage": "https://www.drupal.org/project/facets_pretty_paths",
             "support": {
                 "source": "http://cgit.drupalcode.org/facets_pretty_paths"
-            },
-            "time": "2018-05-14T11:52:36+00:00"
+            }
         },
         {
             "name": "drupal/image_delta_formatter",
@@ -3075,70 +3081,6 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
-            }
-        },
-        {
-            "name": "drupal/jsonapi",
-            "version": "1.17.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.17.zip",
-                "reference": "8.x-1.17",
-                "shasum": "fbe3f36bfbbb804c2d7b0314136d30338002b1a0"
-            },
-            "require": {
-                "drupal/core": "^8.4.3"
-            },
-            "require-dev": {
-                "drupal/schemata": "1.x-dev#8325d172e1d6880aa24073f8f751ef089282cf9a",
-                "drupal/schemata_json_schema": "*",
-                "justinrainbow/json-schema": "^4.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.17",
-                    "datestamp": "1525889880",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
-                    "name": "gabesullice",
-                    "homepage": "https://www.drupal.org/user/2287430"
-                }
-            ],
-            "description": "Provides a JSON API standards-compliant API for accessing and manipulating Drupal content and configuration entities.",
-            "homepage": "https://www.drupal.org/project/jsonapi",
-            "support": {
-                "source": "http://cgit.drupalcode.org/jsonapi"
             }
         },
         {
@@ -3368,6 +3310,10 @@
                 {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "daggerhart",
+                    "homepage": "https://www.drupal.org/user/167806"
                 },
                 {
                     "name": "dakala",
@@ -3693,6 +3639,10 @@
                     "homepage": "https://www.drupal.org/user/3094661"
                 },
                 {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
                     "name": "dstol",
                     "homepage": "https://www.drupal.org/user/329570"
                 },
@@ -3830,13 +3780,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalcommerce/demo_commerce.git",
-                "reference": "3f304e2841aa75b0ed94e81f698a6c6623d88004"
+                "reference": "ae36c33da9d651d26ecdc497bc08d69db1ea6b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalcommerce/demo_commerce/zipball/3f304e2841aa75b0ed94e81f698a6c6623d88004",
-                "reference": "3f304e2841aa75b0ed94e81f698a6c6623d88004",
+                "url": "https://api.github.com/repos/drupalcommerce/demo_commerce/zipball/ae36c33da9d651d26ecdc497bc08d69db1ea6b20",
+                "reference": "ae36c33da9d651d26ecdc497bc08d69db1ea6b20",
                 "shasum": ""
+            },
+            "require": {
+                "drupal/admin_toolbar": "~1.0",
+                "drupal/belgrade": "1.x-dev",
+                "drupal/commerce": "~2.0",
+                "drupal/commerce_cart_api": "^1.0",
+                "drupal/commerce_cart_flyout": "^1.0",
+                "drupal/commerce_demo": "1.x-dev",
+                "drupal/swiftmailer": "~1.0",
+                "drupal/token": "~1.0"
             },
             "type": "drupal-profile",
             "license": [
@@ -3848,7 +3808,7 @@
                 "source": "https://github.com/drupalcommerce/demo_commerce/tree/master",
                 "issues": "https://github.com/drupalcommerce/demo_commerce/issues"
             },
-            "time": "2018-05-18T14:49:11+00:00"
+            "time": "2018-05-18T15:02:47+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -8209,11 +8169,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/belgrade": 20,
-        "drupal/commerce_bootstrap": 20,
-        "drupal/commerce_demo": 20,
-        "drupal/facets": 20,
-        "drupal/facets_pretty_paths": 20,
         "drupalcommerce/demo_commerce": 20,
         "behat/mink": 20
     },
