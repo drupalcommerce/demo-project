@@ -6,7 +6,7 @@ Quick start:
 
 ```
 composer create-project drupalcommerce/demo-project demo-commerce --stability dev --no-interaction
-cd demo-project
+cd demo-commerce
 composer run preview
 ```
 
