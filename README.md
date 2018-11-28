@@ -39,7 +39,7 @@ composer run preview
 To reinstall
 
 ```
-composer run cleanup
+composer run clean
 composer run preview
 ```
 
