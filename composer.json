@@ -24,12 +24,12 @@
         }
     },
     "config": {
-      "bin-dir": "bin",
-      "discard-changes": true,
-      "sort-packages": true,
-      "platform": {
-          "php": "5.6"
-      }
+        "bin-dir": "bin",
+        "discard-changes": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "5.6"
+        }
     },
     "require": {
         "ext-curl": "*",
@@ -53,13 +53,14 @@
     "prefer-stable": true,
     "autoload": {
         "classmap": [
-            "scripts/composer/ScriptHandler.php",
-            "scripts/demo/DemoInstallCommand.php",
-            "scripts/demo/DemoStartCommand.php"
+            "scripts/composer/ScriptHandler.php"
         ]
     },
     "scripts": {
-        "preview": "composer install && scripts/demo-install.php install && scripts/demo-install.php start",
+        "preview": [
+            "composer install",
+            "php web/core/scripts/drupal quick-start demo_commerce --no-interaction"
+        ],
         "clean": "chmod 775 web/sites/default; chmod 664 web/sites/default/settings.php; rm web/sites/default/settings.php; rm web/sites/default/files/.sqlite*; rm -rf web/sites/default/files/*",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
