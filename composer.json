@@ -59,6 +59,8 @@
     "scripts": {
         "preview": [
             "composer install",
+            "echo '// Workaround for Bootstrap https://www.drupal.org/project/bootstrap/issues/2667062' >> web/sites/default/default.settings.php",
+            "echo '$settings['\"'\"'maintenance_theme'\"'\"'] = '\"'\"'seven'\"'\"';' >> web/sites/default/default.settings.php",
             "php web/core/scripts/drupal quick-start demo_commerce --no-interaction"
         ],
         "clean": "chmod 775 web/sites/default; chmod 664 web/sites/default/settings.php; rm web/sites/default/settings.php; rm -rf web/sites/default/files/*",
