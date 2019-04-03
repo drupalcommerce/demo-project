@@ -1,13 +1,11 @@
 language: php
 php:
-  - 5.6
   - 7.1
+  - 7.2
+  - 7.3
 matrix:
   fast_finish: true
-  allow_failures:
-    - php: "7.2"
-  include:
-    - php: "7.2"
+
 before_install:
   - phpenv config-rm xdebug.ini
   # Add the oauth token to prevent GitHub timeouts.
@@ -19,4 +17,4 @@ before_script:
 install:
   - composer install
 script:
-  - scripts/demo-install.php install
+  - php web/core/scripts/drupal install demo_commerce
