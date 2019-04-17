@@ -46,6 +46,14 @@ class ScriptHandler {
           'required' => TRUE,
         ],
       ];
+
+      // Workaround for Bootstrap https://www.drupal.org/project/bootstrap/issues/2667062
+      $settings['settings'] = [
+        'maintenance_theme' => (object) [
+          'value' => 'seven',
+          'required' => TRUE,
+        ]
+      ];
       drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
       $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
       $event->getIO()->write("Create a sites/default/settings.php file with chmod 0666");
