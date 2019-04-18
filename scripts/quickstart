@@ -25,11 +25,15 @@ $application->add(new ServerCommand($classloader));
 $application->setDefaultCommand('quick-start');
 
 // Provide default input arguments for the quick-start command.
-$arguments = [
-    'command' => 'quick-start',
-    'install-profile' => 'demo_commerce',
-    '--site-name' => 'Drupal Commerce Demo',
-    '--no-interaction' => TRUE,
-];
-
-$application->run(new ArrayInput($arguments));
+if (count($_SERVER['argv']) === 1) {
+    $arguments = [
+        'command' => 'quick-start',
+        'install-profile' => 'demo_commerce',
+        '--site-name' => 'Drupal Commerce Demo',
+        '--no-interaction' => TRUE,
+    ];
+    $application->run(new ArrayInput($arguments));
+}
+else {
+    $application->run();
+}

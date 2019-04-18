@@ -29,7 +29,7 @@ jobs:
           command: composer install -n --prefer-dist --no-dev
       - run:
           name: Install should pass.
-          command: php scripts/quickstart
+          command: php scripts/quickstart install
       - run:
           name: Clean
           command: - php scripts/clean
