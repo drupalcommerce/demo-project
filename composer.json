@@ -57,11 +57,6 @@
         ]
     },
     "scripts": {
-        "preview": [
-            "composer install",
-            "php -d memory_limit=256M web/core/scripts/drupal quick-start demo_commerce --no-interaction"
-        ],
-        "clean": "chmod 775 web/sites/default; chmod 664 web/sites/default/settings.php; rm web/sites/default/settings.php; rm -rf web/sites/default/files",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"

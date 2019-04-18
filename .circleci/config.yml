@@ -29,10 +29,10 @@ jobs:
           command: composer install -n --prefer-dist --no-dev
       - run:
           name: Install should pass.
-          command: php web/core/scripts/drupal install demo_commerce
+          command: php scripts/quickstart
       - run:
           name: Clean
-          command: composer run clean
+          command: - php scripts/clean
       - run:
           name: Package it up
           command: |
