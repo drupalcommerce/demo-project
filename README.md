@@ -7,7 +7,7 @@ Quick start:
 ```
 composer create-project drupalcommerce/demo-project demo-commerce --stability dev --no-interaction
 cd demo-commerce
-composer run preview
+php scripts/quickstart
 ```
 
 ![Belgrade product example](assets/belgrade-product.jpg)
@@ -33,14 +33,14 @@ all files not excluded by the .gitignore file.
 Then run
 
 ```
-composer run preview
+php scripts/quickstart
 ```
 
 To reinstall
 
 ```
-composer run cleanup
-composer run preview
+php scripts/clean
+php scripts/quickstart
 ```
 
 ## What does the demo do?
