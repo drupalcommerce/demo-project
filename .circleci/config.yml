@@ -32,7 +32,7 @@ jobs:
           command: php scripts/quickstart install
       - run:
           name: Clean
-          command: - php scripts/clean
+          command: php scripts/clean
       - run:
           name: Package it up
           command: |
