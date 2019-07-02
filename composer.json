@@ -40,8 +40,9 @@
         "drupal/core": "^8.6.0",
         "drupalcommerce/demo_commerce": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
-        "webflo/drupal-finder": "^1.0",
-        "webmozart/path-util": "^2.3"
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.6.0"
@@ -74,6 +75,7 @@
     "extra": {
         "patches": {
         },
+        "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
@@ -99,7 +101,7 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/contrib/{$name}": [
+            "drush/Commands/{$name}": [
                 "type:drupal-drush"
             ]
         },
