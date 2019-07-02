@@ -5,7 +5,7 @@ Use [Composer](https://getcomposer.org/) to get a Drupal Commerce demo.
 Quick start:
 
 ```
-composer create-project drupalcommerce/demo-project demo-commerce --no-interaction
+composer create-project drupalcommerce/demo-project demo-commerce --stability dev --no-interaction
 cd demo-commerce
 php scripts/quickstart
 ```
