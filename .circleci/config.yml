@@ -3,7 +3,7 @@ version: 2
 # Helpers
 defaults: &defaults
   docker:
-    - image: mglaman/ci-images:circleci-php7.1-browsers
+    - image: circleci/php:7.2-cli
   working_directory: ~/repo
 restore_cache: &restore_cache
   keys:
