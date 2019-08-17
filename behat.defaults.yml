@@ -1,0 +1,42 @@
+default:
+  autoload: ['%paths.base%/tests/features/bootstrap']
+  suites:
+    default:
+      failure_path: '%paths.base%/tests/failures'
+      results_path: '%paths.base%/tests/results'
+      paths:
+        features: '%paths.base%/tests/features'
+        bootstrap: '%paths.base%/tests/features/bootstrap'
+      contexts:
+        - FailureContext
+        - FeatureContext
+        # Support BigPipe in Behat - https://github.com/jhedstrom/drupalextension/pull/325
+        - BigPipeContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      selenium2:
+        browser: chrome
+      sessions:
+        default:
+          selenium2:
+            browser: chrome
+            wd_host: http://localhost:9515
+            capabilities:
+              chrome:
+                switches:
+                  - "--user-agent=ChromeDriver"
+                    # - "--headless"
+    Drupal\DrupalExtension:
+      blackbox: ~
+      region_map:
+        'Header Catalog Menu': '#block-belgrade-catalog-menu'
+        'Cart block': '.cart--cart-block'
+        # Flyout
+        'Cart Flyout': '#cart-offcanvas'
+        'Featured Products': '.featured-products'
+        'Catalog': '.view-product-catalog'

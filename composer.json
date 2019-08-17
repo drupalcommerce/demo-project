@@ -24,7 +24,6 @@
         }
     },
     "config": {
-        "bin-dir": "bin",
         "discard-changes": true,
         "sort-packages": true
     },
@@ -37,12 +36,14 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "8.8.x-dev",
         "drupalcommerce/demo_commerce": "dev-master",
+        "drush/drush": "^9.7",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
+        "drupal/drupal-extension": "^3.4",
         "webflo/drupal-core-require-dev": "8.8.x-dev"
     },
     "conflict": {
