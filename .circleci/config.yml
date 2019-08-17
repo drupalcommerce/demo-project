@@ -5,6 +5,9 @@ version: 2.1
 defaults: &defaults
   docker:
     - image: mglaman/ci-images:circleci-php7.2-browsers
+    - image: mariadb:10.3
+      environment:
+        MYSQL_ALLOW_EMPTY_PASSWORD: 1
   working_directory: ~/repo
 
 commands:
@@ -88,7 +91,7 @@ jobs:
       - run:
           name: Setup the database
           command: |
-            ./vendor/bin/drush si --account-pass=admin --yes
+            ./vendor/bin/drush si --account-pass=admin --db-url=mysql://root:@127.0.0.1:3306/db --yes
       - behat
 workflows:
   version: 2
