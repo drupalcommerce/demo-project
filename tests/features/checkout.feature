@@ -1,3 +1,4 @@
+@javascript @demo
 Feature: Checkout
     In order to complete my order
     As a customer
