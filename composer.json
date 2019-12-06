@@ -36,9 +36,9 @@
         "ext-curl": "*",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7.0",
+        "drupal/core": "^8.8.0",
+        "drupal/core-composer-scaffold": "^8.8.0",
         "drupalcommerce/demo_commerce": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0.0",
@@ -46,7 +46,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.7.0"
+        "drupal/core-dev": "^8.8.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -80,6 +80,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
@@ -102,15 +107,9 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/Commands/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
-        },
-        "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
-            }
         }
     }
 }
