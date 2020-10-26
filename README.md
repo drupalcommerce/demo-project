@@ -158,14 +158,14 @@ For more details, see https://asset-packagist.org/site/about
 
 ### How do I specify a PHP version ?
 
-This project supports PHP 7.0 as minimum version (see [Drupal 8 PHP requirements](https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7+.
+This project supports PHP 7.1 as minimum version (see [Drupal 8 PHP requirements](https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7+.
 
 To prevent this you can add this code to specify the PHP version you want to use in the `config` section of `composer.json`:
 ```json
 "config": {
     "sort-packages": true,
     "platform": {
-        "php": "7.0.33"
+        "php": "7.1"
     }
 },
 ```

@@ -28,25 +28,24 @@
         "discard-changes": true,
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.1"
         }
     },
     "require": {
-        "php": ">=7.0.8",
+        "php": ">=7.1",
         "ext-curl": "*",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/console": "^1.0.2",
         "drupal/core": "^8.9.0",
         "drupal/core-composer-scaffold": "^8.9.0",
         "drupalcommerce/demo_commerce": "dev-master",
-        "oomphinc/composer-installers-extender": "^1.1",
+        "oomphinc/composer-installers-extender": "^2.0",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.9.0"
+        "drupal/core-dev": "^8.9.0",
+        "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "conflict": {
         "drupal/drupal": "*"
