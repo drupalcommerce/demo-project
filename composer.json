@@ -14,10 +14,6 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "demo_commerce": {
-            "type": "vcs",
-            "url": "https://github.com/drupalcommerce/demo_commerce"
-        },
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
@@ -36,9 +32,9 @@
         "ext-curl": "*",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
+        "drupal/commerce_kickstart": "3.x-dev",
         "drupal/core": "^8.9.0",
         "drupal/core-composer-scaffold": "^8.9.0",
-        "drupalcommerce/demo_commerce": "dev-master",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "webflo/drupal-finder": "^1.0.0",
