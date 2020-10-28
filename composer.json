@@ -10,6 +10,10 @@
         }
     ],
     "repositories": {
+        "commerce_kickstart": {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/commerce_kickstart.git"
+        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
