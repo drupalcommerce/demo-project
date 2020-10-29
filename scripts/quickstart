@@ -28,7 +28,7 @@ $application->setDefaultCommand('quick-start');
 if (count($_SERVER['argv']) === 1) {
     $arguments = [
         'command' => 'quick-start',
-        'install-profile' => 'demo_commerce',
+        'install-profile' => 'commerce_kickstart',
         '--site-name' => 'Drupal Commerce Demo',
         '--no-interaction' => TRUE,
     ];
