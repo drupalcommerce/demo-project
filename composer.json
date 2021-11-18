@@ -28,11 +28,11 @@
         "discard-changes": true,
         "sort-packages": true,
         "platform": {
-            "php": "7.1"
+            "php": "7.3"
         }
     },
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.3",
         "ext-curl": "*",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.7",
