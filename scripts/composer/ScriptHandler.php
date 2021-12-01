@@ -40,12 +40,7 @@ class ScriptHandler {
       $fs->copy($drupalRoot . '/sites/default/default.settings.php', $drupalRoot . '/sites/default/settings.php');
       require_once $drupalRoot . '/core/includes/bootstrap.inc';
       require_once $drupalRoot . '/core/includes/install.inc';
-      $settings['config_directories'] = [
-        CONFIG_SYNC_DIRECTORY => (object) [
-          'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
-          'required' => TRUE,
-        ],
-      ];
+      $settings['config_sync_directory'] = Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot);
 
       // Workaround for Bootstrap https://www.drupal.org/project/bootstrap/issues/2667062
       $settings['settings']['maintenance_theme'] = (object) [
