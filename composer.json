@@ -17,10 +17,6 @@
         "demo_commerce": {
             "type": "vcs",
             "url": "https://github.com/drupalcommerce/demo_commerce"
-        },
-        "asset-packagist": {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
         }
     },
     "config": {
@@ -85,18 +81,12 @@
                 "web-root": "web/"
             }
         },
-        "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset"
+                "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
