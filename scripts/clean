@@ -1,0 +1,54 @@
+#!/usr/bin/env php
+<?php
+
+if (PHP_SAPI !== 'cli') {
+    return;
+}
+
+$classloader = require_once __DIR__ . '/../vendor/autoload.php';
+
+use DrupalFinder\DrupalFinder;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Filesystem\Filesystem;
+use Webmozart\PathUtil\Path;
+
+$application = new Application('drupal', \Drupal::VERSION);
+$application
+    ->register('clean')
+    ->setCode(function(InputInterface $input, OutputInterface $output) {
+        $fs = new Filesystem();
+        $drupalFinder = new DrupalFinder();
+        $drupalFinder->locateRoot(getcwd());
+        $drupalRoot = $drupalFinder->getDrupalRoot();
+
+        $fs->chmod($drupalRoot . '/sites/default', 0775);
+        $fs->remove($drupalRoot . '/sites/default/files/');
+
+        $fs->remove($drupalRoot . '/sites/default/settings.php');
+        $fs->copy($drupalRoot . '/sites/default/default.settings.php', $drupalRoot . '/sites/default/settings.php');
+        require_once $drupalRoot . '/core/includes/bootstrap.inc';
+        require_once $drupalRoot . '/core/includes/install.inc';
+        $settings['config_directories'] = [
+            CONFIG_SYNC_DIRECTORY => (object) [
+              'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
+              'required' => TRUE,
+            ],
+          ];
+
+          // Workaround for Bootstrap https://www.drupal.org/project/bootstrap/issues/2667062
+          $settings['settings']['maintenance_theme'] = (object) [
+            'value' => 'seven',
+            'required' => TRUE,
+          ];
+
+          // When writing $settings[], an existing Settings instance needs to exist.
+          new \Drupal\Core\Site\Settings([]);
+          drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
+
+          $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
+          $fs->mkdir($drupalRoot . '/sites/default/files', 0777);
+    });
+$application->setDefaultCommand('clean');
+$application->run();

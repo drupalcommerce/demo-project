@@ -14,62 +14,35 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "commerce_cart_api": {
+        "demo_commerce": {
             "type": "vcs",
-            "url": "https://github.com/mglaman/commerce_cart_api.git"
-        },
-        "commerce_cart_flyout": {
-            "type": "vcs",
-            "url": "https://github.com/mglaman/commerce_cart_flyout.git"
-        },
-        "asset-packagist": {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://github.com/drupalcommerce/demo_commerce"
         }
     },
     "config": {
-      "bin-dir": "bin",
-      "discard-changes": true,
-      "sort-packages": true,
-      "process-timeout": 0,
-      "platform": {
-        "php": "5.6"
-      }
+        "bin-dir": "bin",
+        "discard-changes": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "7.3"
+        }
     },
     "require": {
+        "php": ">=7.3",
         "ext-curl": "*",
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6",
-        "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/admin_toolbar": "~1.0",
-        "drupal/belgrade": "1.x-dev",
-        "drupal/bootstrap": "^3.10",
-        "drupal/color_field": "^2.0",
-        "drupal/commerce": "~2.0",
-        "drupal/commerce_bootstrap": "1.x-dev",
-        "drupal/commerce_cart_api": "dev-master",
-        "drupal/commerce_cart_flyout": "dev-master",
-        "drupal/commerce_demo": "1.x-dev",
-        "drupal/console": "~1.0",
-        "drupal/core": "~8.4",
-        "drupal/facets": "1.x-dev",
-        "drupal/facets_pretty_paths": "1.x-dev",
-        "drupal/search_api": "~1.0",
-        "drupal/swiftmailer": "~1.0",
-        "drupal/taxonomy_menu": "^3.3",
-        "drupal/token": "~1.0",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "webflo/drupal-finder": "^1.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/core": "^9.0",
+        "drupal/core-composer-scaffold": "^9.0",
+        "drupalcommerce/demo_commerce": "dev-master",
+        "drush/drush": "^9.7.1 | ^10.0.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "behat/mink": "1.7.x-dev",
-        "behat/mink-goutte-driver": "~1.2",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsstream": "~1.2",
-        "phpunit/phpunit": ">=4.8.35 <5",
-        "symfony/css-selector": "~3.2.8"
+        "drupal/core-dev": "^9.0",
+        "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -78,9 +51,7 @@
     "prefer-stable": true,
     "autoload": {
         "classmap": [
-            "scripts/composer/ScriptHandler.php",
-            "scripts/demo/DemoInstallCommand.php",
-            "scripts/demo/DemoStartCommand.php"
+            "scripts/composer/ScriptHandler.php"
         ]
     },
     "scripts": {
@@ -109,18 +80,21 @@
             "Flyout overrides": "https://www.drupal.org/files/issues/2018-04-02/2957740-3.patch"
           }
         },
-        "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset"
+                "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -131,7 +105,7 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/contrib/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
         }
